@@ -35,3 +35,8 @@ def login():
                            title='Sign In',
                            form=form,
                            )
+
+
+@app.route('/sensor/<int:sensorID>')
+def show_sensor(sensorID):
+    return 'sensor number {}'.format(sensorID)
